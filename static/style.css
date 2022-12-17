@@ -270,6 +270,10 @@ main {
     margin: 25px;
 }
 
+.no {
+    position:static;
+}
+
 .dlbutton:active {
     padding: 15px 15px;
     border: solid 1px #726500;
