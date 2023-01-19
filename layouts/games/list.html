@@ -4,10 +4,10 @@
 
     {{ .Content }}
 
-    <div id="list" class="auto-grid">
+    <ul id="list">
         {{ range .Pages }}
-            <div><img src="{{ .Params.icon }}"></img><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+            <li><img src="{{ .Params.icon }}"></img><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
-    </div>
+    </ul>
     
 {{ end }}
