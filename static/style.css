@@ -7,61 +7,9 @@
     font-family: "Sussy Sans";
     src: url("https://raw.githubusercontent.com/hq-apps/saffari-sans/main/Sussy%20Sans.ttf");
 }
-
-body {
-    margin: 0;
-    background-image: url("/bgstar.gif");
-    color: white;
-    height: 100vh;
-    font-family: "Sussy Sans";
-}
-
-#headerTop {
-    padding: 10px;
-    padding-bottom: 20px;
-    font-family: monospace;
-    background-color: gray;
-    background-image: url("/headerTop.png");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: bottom;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#headerTop a {
-    background-color: white;
-    color: gray;
-    padding: 3px;
-    margin: 2px;
-}
-
-#headerMain {
-    height: 60px;
-    margin: 15px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    gap: 50px;
-}
-
-#headerMain * {
-    height: 100%;
-}
-
-#header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #00000095;
-    border-bottom: #80808032 1px solid;
-    backdrop-filter: blur(8px) saturate(10);
-    overflow: hidden;
-}
-
+h1 {font-family: "Saffari Sans", sans-serif}
+body,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
 #search {
     background-image: url("/search.png");
     background-size: cover;
@@ -73,59 +21,25 @@ body {
     font-size: large;
 }
 
-#headerBottom a {
-    color: #424242;
-    font-size: large;
-    text-decoration: none;
-    font-family: monospace;
-    margin-left: 23px;
+body {
+    cursor: url("/cursor.png"), help;
+}
+
+a {
+    cursor: url("/click.cur"), pointer;
 }
 
 h1 {
     font-family: "Saffari Sans";
 }
 
-main {
-    padding: 15px;
-    margin: 10px;
-    width: 60%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #00000095;
-    border: #80808032 1px solid;
-    backdrop-filter: blur(8px) saturate(10);
-    -webkit-backdrop-filter: blur(8px) saturate(10);
-    box-sizing: border-box;
-    overflow-x: scroll;
-}
-
-#footer {
-    padding: 10px;
-    padding-bottom: 20px;
-    font-family: monospace;
-    background-color: gray;
-    background-image: url("/footer.png");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: top;
+h1::after {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#footer a {
-    background-color: white;
-    color: gray;
-    padding: 3px;
-    margin: 2px;
-}
-
-#list a,
-#back {
-    color: white;
-    text-decoration: none;
+    margin-top: 16px;
+    content: "";
+    width: 64px;
+    border: 5px solid red;
+    border-radius: 4px;
 }
 
 .slideshow {

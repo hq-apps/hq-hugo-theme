@@ -1,8 +1,11 @@
 {{ define "main" }}
 <a href=".." id="back">< BECK!</a>
     {{ .Params.hqtype }}
-    <article>
-        <h1>{{ .Params.fullTitle }}</h1>
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>{{ .Params.fullTitle }}</b></h1>
+
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+
         {{ .Content }}
-    </article>
+      </div>
 {{ end }}
