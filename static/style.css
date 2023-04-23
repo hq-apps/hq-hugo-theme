@@ -7,7 +7,8 @@
     font-family: "Sussy Sans";
     src: url("https://raw.githubusercontent.com/hq-apps/saffari-sans/main/Sussy%20Sans.ttf");
 }
-h1 {font-family: "Saffari Sans", sans-serif}
+h1 {font-family: "Saffari Sans", sans-serif; font-size: 64px;}
+h2 {font-family: "Saffari Sans", sans-serif; font-size: 48px; color: #f44336;}
 body,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 #search {
@@ -33,7 +34,7 @@ h1 {
     font-family: "Saffari Sans";
 }
 
-h1::after {
+h1::after, h2::after {
     display: flex;
     margin-top: 16px;
     content: "";
